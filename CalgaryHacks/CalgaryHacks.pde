@@ -1,5 +1,5 @@
 State[] states = new State[4];
-int currentState = 3;
+int currentState = 0;
 
 void setup()
 {
@@ -19,6 +19,11 @@ void draw()
   states[currentState].update();
 }
 
+void backPressed()
+{
+  if(currentState == 3)
+    currentState = 2;
+}
 
 abstract class State
 {

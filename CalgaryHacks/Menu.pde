@@ -1,16 +1,19 @@
 class Menu extends State
 {
+  PImage menu = loadImage("Menu.png");
+  Button checkin = new Button(75, 340, 1312, 232);
+  Button sw = new Button(73, 60, 124, 116);
   void update()
   {
-    bottomBar();
-  }
-  
-  void bottomBar()
-  {
-    fill(0);
-    noStroke();
-    rect(0, height*.9, width, height*.1);
-    stroke(100);
-    line(0, height*.9, width, height*.9);
+    image(menu, 0, 0, width, height);
+    checkin.update();
+    sw.update();
+    if(checkin.released)
+    {
+      checkInState = 0;
+      currentState = 1;
+    }
+    if(sw.released)
+      currentState = 2;
   }
 }
