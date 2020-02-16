@@ -1,8 +1,8 @@
 class Caregiver extends State
 {
-  PImage bars = loadImage("bars.png");
+  PImage caregiver = loadImage("Caregiver.png");
   void update()
   {
-    image(bars, height*.05, width*.05, 200, 200);
+    image(caregiver, 0, 0, width, height);
   }
 }

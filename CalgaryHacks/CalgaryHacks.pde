@@ -1,5 +1,5 @@
 State[] states = new State[4];
-int currentState = 2;
+int currentState = 3;
 
 void setup()
 {
@@ -9,6 +9,8 @@ void setup()
   states[1] = new CheckIn();
   states[2] = new Caregiver();
   states[3] = new CaregiverView();
+  //println("Width:" + width);
+  //println("Height:" + height);
 }
 
 void draw()
