@@ -4,7 +4,7 @@ int currentState = 0;
 void setup()
 {
   frameRate(60);
-  orientation(LANDSCAPE);
+  orientation(PORTRAIT);
   states[0] = new CheckIn();
   states[1] = new Menu();
 }
