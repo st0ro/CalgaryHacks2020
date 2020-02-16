@@ -9,6 +9,10 @@ void setup()
   states[1] = new Menu();
 }
 
+void draw()
+{
+  states[currentState].update();
+}
 
 
 abstract class State
