@@ -1,5 +1,5 @@
-State[] states = new State[2];
-int currentState = 0;
+State[] states = new State[4];
+int currentState = 2;
 
 void setup()
 {
@@ -7,6 +7,8 @@ void setup()
   orientation(PORTRAIT);
   states[0] = new Menu();
   states[1] = new CheckIn();
+  states[2] = new Caregiver();
+  states[3] = new CaregiverView();
 }
 
 void draw()
